@@ -48,6 +48,17 @@ app.get('/api/user', (req,res) => {
       res.send({"code":50008,"message":"Bad token","data":null})
      })
     
+app.get('/api/info/getFaq', (req,res) => { 
+      res.send({"code":1,"msg":"OK","time":1663409168,"data":[{"detail":"<ol>\r\n\t<li><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:11px;\">Como se cadastrar como membro?<\/span><\/span><\/li>\r\n<\/ol>\r\n\r\n<p style=\"margin-left:25px\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:11px;\">&nbsp;O sistema adota o sistema de convite para cadastrar novos membros. A fim de garantir a renda dos membros registrados e evitar que o excesso de registro reduza a renda, os novos membros s&oacute; podem se registrar a convite dos membros existentes.<\/span><\/span><\/p>\r\n\r\n<ol start=\"2\">\r\n\t<li><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:11px;\">Como depositar e quais os m&eacute;todos de pagamento?<\/span><\/span><\/li>\r\n<\/ol>\r\n\r\n<p style=\"margin-left:25px\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:11px;\">O sistema est&aacute; aberto a v&aacute;rios pa&iacute;ses, fornecemos m&eacute;todos de pagamento internacionais: usdt (trc20). Tamb&eacute;m apoiamos nossas pr&oacute;prias moedas para diferentes pa&iacute;ses.<\/span><\/span><\/p>\r\n\r\n<ol start=\"3\">\r\n\t<li><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:11px;\">Como posso investir e obter renda?<\/span><\/span><\/li>\r\n<\/ol>\r\n\r\n<p style=\"margin-left:25px\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:11px;\">Voc&ecirc; pode comprar um rob&ocirc; no sistema e obter renda e juros de furto autom&aacute;ticos est&aacute;veis &nbsp; todos os dias. Toda a renda pode ser retirada para o seu cart&atilde;o banc&aacute;rio.<\/span><\/span><\/p>\r\n\r\n<ol start=\"4\">\r\n\t<li><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:11px;\">Existe um limite no valor da compra?<\/span><\/span><\/li>\r\n<\/ol>\r\n\r\n<p style=\"margin-left:25px\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:11px;\">Sim, para que mais membros tenham a oportunidade de obter renda, cada conta do sistema tem um valor m&aacute;ximo de compra.<\/span><\/span><\/p>\r\n\r\n<ol start=\"5\">\r\n\t<li><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:11px;\">Como lidar com os problemas na opera&ccedil;&atilde;o?<\/span><\/span><\/li>\r\n<\/ol>\r\n\r\n<p style=\"margin-left:25px\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:11px;\">Voc&ecirc; pode entrar em contato com o atendimento ao cliente on-line a qualquer momento para ajudar a concluir todas as opera&ccedil;&otilde;es .<\/span><\/span><\/p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;<\/p>","title":"Common Questions"}]})
+     })
+
+
+app.get('/api/info/getCustomer', (req,res) => { 
+      res.send({"code":1,"msg":"OK","time":1663409168,"data":[{"id":1,"username":"贵宾服务","url":"https:\/\/wa.me\/5511954764468"},{"id":2,"username":"在线服务","url":"https:\/\/t.me\/NassShop888"}]})
+     })
+
+
+
     app.get('/api/user/userCount', (req,res) => { 
       res.json({"code":1,"msg":"OK","time":1663404267,"data":{"robot_profit":0,"team_profit":0,"order_profit":0,"robot_balance":"0.0000","manual":0,"auto":0,"total":0}})
      })
