@@ -40,10 +40,6 @@ app.get('/api/auth/login', (req,res) => {
 
 
 
-app.post('/api/auth/registered', (req,res) => {
-       res.send({"code":1,"msg":"OK","time":1663413551,"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhZG1pbi5uYXNzc2hvcC5jb20iLCJhdWQiOiJhZG1pbi5uYXNzc2hvcC5jb20iLCJpYXQiOjE2NjM0MTM1NTEsIm5iZiI6MTY2MzQxMzU1MSwiZXhwIjoxNjY4NTk3NTUxLCJqdGkiOnsiaWQiOjEyNDYwNCwidHlwZSI6Ikg1In19.4cK3Wvvw4pSZ06UZ_7nPEcEdeId3OnGa2ach_m7-fA0","userId":"124604"}}})
-    
-    
 
 
 
