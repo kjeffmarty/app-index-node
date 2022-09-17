@@ -22,11 +22,7 @@ app.get('/', function (req,res) {
     
     })
     
-    
-app.get('/api/auth/login', (req,res) => {
-       res.send({"code":1,"msg":"OK","time":1663277614,"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhZG1pbi5uYXNzc2hvcC5jb20iLCJhdWQiOiJhZG1pbi5uYXNzc2hvcC5jb20iLCJpYXQiOjE2NjMyNzc2MTQsIm5iZiI6MTY2MzI3NzYxNCwiZXhwIjoxNjY4NDYxNjE0LCJqdGkiOnsiaWQiOjEyMDI5NywidHlwZSI6Ikg1In19.JfvB44u4CGUl21fHA2nF7KAcnUVgAEmABczuaaaR1oM","userId":120297,"otc_member_level":0}})
-    
-    })
+   
     
     
     
