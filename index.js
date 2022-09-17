@@ -58,6 +58,10 @@ app.get('/api/user', (req,res) => {
     })
 
 
+app.get('/api/robot/robotList', (req,res) => { 
+      res.json({"code":1,"msg":"OK","time":1663408717,"data":{"list":[{"id":1,"name":"3 dias","day":3,"bili":"0.022","min_num":"100","max_num":"999999","shouxu":"0","name_po":"3 dias"},{"id":2,"name":"30 dias","day":30,"bili":"0.028","min_num":"999999","max_num":"999999","shouxu":"0","name_po":"30 dias"},{"id":3,"name":"60 dias","day":60,"bili":"0.032","min_num":"999999","max_num":"999999","shouxu":"0","name_po":"60 dias"},{"id":4,"name":"90 dias","day":90,"bili":"0.045","min_num":"999999","max_num":"999999","shouxu":"0","name_po":"90 dias"},{"id":5,"name":"120 dias","day":120,"bili":"0.06","min_num":"999999","max_num":"999999","shouxu":"0","name_po":"120 dias"},{"id":6,"name":"180 dias","day":180,"bili":"0.08","min_num":"999999","max_num":"999999","shouxu":"0","name_po":"180 dias"}],"balance":"0.0000"}})
+     })
+
 
     app.listen(port, () => {
       console.info("servidor aberto: https://localhost:3000")});
