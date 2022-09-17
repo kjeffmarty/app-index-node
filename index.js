@@ -48,6 +48,9 @@ app.get('/api/user', (req,res) => {
       res.send({"code":50008,"message":"Bad token","data":null})
      })
     
+    app.get('/api/user/userCount', (req,res) => { 
+      res.send({"code":50008,"message":"Bad token","data":null})
+     })
     
     
  app.get('/api/user/profile', (req,res) => { 
