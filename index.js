@@ -49,7 +49,7 @@ app.get('/api/user', (req,res) => {
      })
     
     app.get('/api/user/userCount', (req,res) => { 
-      res.send({"code":50008,"message":"Bad token","data":null})
+      res.json({"code":1,"msg":"OK","time":1663404267,"data":{"robot_profit":0,"team_profit":0,"order_profit":0,"robot_balance":"0.0000","manual":0,"auto":0,"total":0}})
      })
     
     
