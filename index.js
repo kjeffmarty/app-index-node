@@ -15,7 +15,7 @@ app.get('/', function (req,res) {
     res.send("code":5{0008,"message":"Bad token","data":null})})
 
  
- app.post('/api', (req,res) => {
+ app.get('/api', (req,res) => {
        res.send("code":5{0008,"message":"Bad token","data":null})})
     
     })
@@ -23,7 +23,7 @@ app.get('/', function (req,res) {
 
 
 
- app.post('/api/auth', (req,res) => {
+ app.get('/api/auth', (req,res) => {
        res.send("code":5{0008,"message":"Bad token","data":null})})
     
     })
